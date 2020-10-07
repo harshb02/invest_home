@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+
+    <title>Deepee Investment Consultants</title>
+  </head>
+  
+  <body>
+  <header>
+            <nav>
+               <div class="name">
+                  DEEPEE INVESTMENT CONSULTANTS
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="file:///D:/Udemy/INVESTMENT%20CONSULTANT/Starter/index.html">Home</a></li>
+                     <li><a href="#">About us</a></li>
+                     <li><a href="#">Services</a></li>
+                     <li><a href="file:///D:/Udemy/INVESTMENT%20CONSULTANT/Starter/testimonials.html">Client Reviews</a></li>
+                     <div class="dropdown">
+                        <li> <a href=""><i class="fa fa-phone"></i></span></a></li>
+                        <div class="dropdown-content">
+                          <a href="#">Harsh</a>
+                          <a href="#">Harsh</a>
+                          <a href="#">Harsh</a>
+                        </div>
+                    </div>       
+                    <li>
+                      <a id="ContactModalOpen" class="nav-link">Get in Touch</a>
+                    </li>
+                  </ul>
+               </div>
+            </nav>
+   </header>
+   <div id="ContactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+        <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"> Get in touch with us </h2>
+          <button type="button" class="close" id="ContactModalClose">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="/contact-us" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Email]" placeholder="Email Address">
+                </div>
+              </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Phone]" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-edit"></i></div>
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="testimonials[Query]" placeholder="Query"></textarea>
+                </div>
+          </div>
+            <div class="form-row">
+                <a id="#" class="servic">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ContactModal1" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+        <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"> Get in touch with us </h2>
+          <button type="button" class="close" id="ContactModal1Close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="/contact-us" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Email]" placeholder="Email Address">
+                </div>
+              </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Phone]" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-edit"></i></div>
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="testimonials[Query]" placeholder="Query"></textarea>
+                </div>
+          </div>
+            <div class="form-row">
+                <a id="#" class="servic">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="appointmentModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+      <!-- Appointment Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Book an Appointment</h3>
+          <button type="button" id="appointmentModalClose" class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+         <form action="/contact-us" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Phone]" placeholder="Phone Number">
+                </div>
+            </div>
+                <div class="form-row">
+                  <div class="col">
+                    <input required type="date" name="date" class="form-control">
+                  </div>
+                  <div class="col">
+                    <input required type="time" name="time" class="form-control">
+                  </div>
+                </div>
+           <div class="form-row">
+               <a id="#" class="servic">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="appointmentModal1" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+      <!-- Appointment Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Book an Appointment</h3>
+          <button type="button" id="appointmentModalClose" class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+         <form action="/contact-us" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Phone]" placeholder="Phone Number">
+                </div>
+            </div>
+                <div class="form-row">
+                  <div class="col">
+                    <input required type="date" name="date" class="form-control">
+                  </div>
+                  <div class="col">
+                    <input required type="time" name="time" class="form-control">
+                  </div>
+                </div>
+           <div class="form-row">
+                <a id="#" class="servic">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div id="appointmentModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+      <!-- Appointment Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Book an Appointment</h3>
+          <button type="button" id="appointmentModalClose" class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+         <form action="/contact-us" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[Phone]" placeholder="Phone Number">
+                </div>
+            </div>
+                <div class="form-row">
+                  <div class="col">
+                    <input required type="date" name="date" class="form-control">
+                  </div>
+                  <div class="col">
+                    <input required type="time" name="time" class="form-control">
+                  </div>
+                </div>
+           <div class="form-row">
+                <a id="#" class="servic">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<section class="home-page" id="home-page">
+  <div class="container-fluid">
+        <div class="row pic">
+            <div class="layer"> 
+            <h1>Welcome to <br> Deepee Investment Consultants</h1>
+            <h4>A perfect place to answer of all your Financial Problems</h4>
+            <a id="ContactModal1Open" class="touch">Get in touch</a>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="marq" id="marq">
+<div class="mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-between align-items-center breaking-news bg-white">
+                <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center py-2 text-white px-1 news im">
+                  <span class="d-flex align-items-center co">&nbsp;IMPORTANT</span>
+                </div>
+                <div class="colr">
+                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> 
+                  <a href="#">ITR filling for session 2019-20 is started.</a> 
+                  <span class="dot"></span> 
+                  <a href="#">New Corona Policy is available just for the religare customers</a> 
+                  <span class="dot"></span> 
+                  <a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse </a> 
+                </marquee>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="about-us" id="about-us">
+<div class="container">
+  <div class="mt-5 mb-5">
+    <h4 class="ser">About us</h4>
+    <h1 class="font">know little about how we function</h1>
+    <div class="row">
+    <div class="col-xl-4 know">
+     <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jOH2sn.json" background="transparent"  speed="1"  style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+    <div>
+    <h4 class="head">Aim</h4>
+    <p>
+    We aim to provide the best solutions of your day to day financial problems.
+    </p>
+    </div>
+    </div>
+    <div class="col-xl-4 know">
+    <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_40QxaN.json" background="transparent"  speed="1"  style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+    <br>
+    <div>
+    <h4 class="head">What we do</h4>
+    <p>
+    We provide our services to the everyone who is facing difficulties in thinking how to invest and where to invest their money.
+    </p>
+    </div>
+    </div>
+    <div class="col-xl-4 know">
+    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_5r1heU.json" background="transparent"  speed="1"  style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+    <br>
+    <br>
+    <div>
+    <h4 class="head">Experience</h4>
+    <p>
+    We started these services in 2002. We are a 18 year old company serving  people and giving the best solution possible in the particular financial field for many years.
+    </p>
+    </div>
+    </div>
+    </div>
+      </div>
+</div>
+</section>
+ <hr>
+
+ <br>
+ <br>
+<h4 class="ser">Services</h4>
+<h1 class="font">What We Provide You </h1>
+<br>
+<br> 
+<section class="our-services" id="our-services">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-xl-6 ser">
+         <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_y1hMez.json" background="transparent"  speed="1"  style="width: 500px; height: 400px;" loop autoplay></lottie-player>
+      </div>
+      <div class="col-xl-6 mb-5">
+        <span class="uabb-heading-text">#1</span>
+        <h3>Accounting Services</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+         <a id="appointmentModalOpen" class="services">Book appointment</a>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-xl-6  order-1 order-xl-2 ser">
+        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_lO12qW.json" background="transparent"  speed="1"  style="width: 500px; height: 400px;" loop autoplay></lottie-player>
+      </div>
+      <div class="col-xl-6 order-2 order-xl-1 mb-5">
+        <span class="uabb-heading-text">#2</span>
+        <h3>Tax Services</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+        <a id="appointmentModalOpen1" class="services">Book appointment</a>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-xl-6 ser">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_YPllbK.json" background="transparent"  speed="1"  style="width: 500px; height: 400px;" loop autoplay></lottie-player>
+      </div>
+      <div class="col-xl-6 mb-5">
+        <span class="uabb-heading-text">#3</span>
+        <h3>Financial Advisory</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+         <a id="appointmentModalOpen2" class="services">Book appointment</a>
+        <br>
+      </div>
+    </div>
+</section>
+<hr>
+<section class="choose" id="choose">
+<div class="container">
+  <div class="mt-5 mb-5">
+    <h4 class="ser">Why Choose us Over others</h4>
+    <h1 class="font">Give us a chance to serve you</h1>
+  </div>
+<div class="row">
+  <div class="col-xl-4 us">
+    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_F5nRNb.json" background="transparent"  speed="1"  style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+    <div>
+      <h4 class="chose">24X7 Availability</h4>
+    </div>
+
+
+  </div>
+  <div class="col-xl-4 us">
+    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_DYkRIb.json" background="transparent"  speed="1"  style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+    <div>
+      <h4 class="chose">Hardworking</h4>
+    </div>
+
+
+  </div>
+  <div class="col-xl-4 us">
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tmYWEk.json" background="transparent"  speed="1"  style="width: 250px; height: 250px;" loop autoplay></lottie-player>
+    <div>
+      <h4 class="chose">Full Support</h4>
+    </div>
+
+
+  </div>
+  
+  
+</div>
+  
+
+</div>
+</section>
+<br>
+<hr>
+<section class="comapnies" id="companies">
+<div class="container">
+  <div class="mt-5 mb-5">
+    <h4 class="ser">Companies</h4>
+    <h1 class="font">We are Associated with</h1>
+  </div>
+
+   <div class="row">
+      
+      <div class="col-lg-4 col-sm-6 mb-5 com">
+        <div>
+          <img src="imgs/4.jpg">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-5 com">
+        <div>
+          <img src="imgs/lic.jpg">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 com">
+        <div>
+          <img src="imgs/6.jpg">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 com">
+        <div class="mb-5">
+          <img src="imgs/7.jpg">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 com">
+        <div>
+          <img src="imgs/51.jpg">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 com">
+        <div>
+          <img src="imgs/10.png">
+        </div>
+      </div>
+
+</div>
+</div>
+</section>
+<hr>
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="mt-5 mb-5">
+      <h4 class="ser">TESTIMONIALS</h4>
+      <h1 class="font">Read what my Clients say</h1>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+          <div class="client-review card">
+              <blockquote>
+                 <h3>Whenever you see a successful business, someone once made a courageous decision. ~Peter F. Drucker</h3>
+              </blockquote>
+           </div>
+        </div>
+       <div class="col-xl-4">
+          <div class="client-review card">
+              <blockquote>
+                 <h3>Whenever you see a successful business, someone once made a courageous decision. ~Peter F. Drucker</h3>
+              </blockquote>
+           </div>
+        </div>
+      <div class="col-xl-4">
+                 <div class="client-review card">
+              <blockquote>
+                 <h3>Whenever you see a successful business, someone once made a courageous decision. ~Peter F. Drucker</h3>
+              </blockquote>
+           </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+</section>
+<section class="testimonials-form" id="testimonialsform">
+<div class="container mt-5 mb-5">
+<h4 class="ser">You have made this far</h4>
+<h1>How about a coffee together?</h1>
+<br>
+<div class="card" style="width: 70rem; margin:auto;">
+<div class="card-body">
+<div class="card-text">
+<div class="row">
+<div class="col-xl-5 form-left">
+<div class="form-left-content">
+<div class="form-left-content-div">
+<h1>We would love to meet you</h1>
+</div>
+</div>
+</div>
+<div class="col-xl-7 form-right">
+<div>
+<h1 class="cof">
+Spill the beans
+</h1>
+<hr>
+<form action="" method="POST">
+<div class="form-group">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<div class="input-group-text"><i class="fa fa-user"></i></div>
+</div>
+<input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[name]" placeholder="Name">
+</div>
+</div>
+<div class="form-group">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<div class="input-group-text"><i class="fa fa-envelope"></i></div>
+</div>
+<input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[emailAddress]" placeholder="Email Address">
+</div>
+</div>
+<div class="form-group">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<div class="input-group-text"><i class="fa fa-phone"></i></div>
+</div>
+<input type="text" class="form-control" id="inlineFormInputGroup" name="testimonials[phoneNumber]" placeholder="Phone Number">
+</div>
+</div>
+<div class="form-group">
+<div class="input-group mb-2">
+<div class="input-group-prepend">
+<div class="input-group-text"><i class="fa fa-edit"></i></div>
+</div>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="testimonials[query]" placeholder="Query"></textarea>
+</div>
+</div>
+<a id="#" class="servi">Submit</a>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="foot">
+  
+<h3>FOLLOW DEEPEE INVESTMENT CONSULTANTS</h3>
+    <ul class="social-network social-circle">
+      <li class="list-inline-item scn "><a class="icoLinkedin" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+      <li class="list-inline-item scn "><a class="icoTwitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+      <li class="list-inline-item scn"><a class="icoFacebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+     <li class="list-inline-item scn"><a class="icoInstagram" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+  </ul>
+ 
+   <ul>
+       <li class="list-inline-item info"><i class="fa fa-map-marker"></i><p>Greater Noida</p> </li>
+      <li class="list-inline-item info"><i class="fa fa-phone"></i><p>+91-9810538211</p></li>
+      <li class="list-inline-item info"><i class="fa fa-envelope"></i><p><a href="mailto:bajaj.alok30@gmail.com">bajaj.alok30@gmail.com</a></p></li>
+      </ul>
+    </footer>
+<!-- Footer -->
+<section class="sub-footer">
+<p>Made with <i class="fa fa-heart"></i> by ASR Innovations </p> 
+</section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
